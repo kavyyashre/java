@@ -38,7 +38,7 @@ it is called a static variable because it belongs to the class itself, not to an
 
 import java.util.Scanner;
 class variables{
-    int a=10;   //non -static 
+    int a=30;   //non -static 
     static int b=20;    //static variables
     public static void sum(){               //static method 
         Scanner sc=new Scanner (System.in);
