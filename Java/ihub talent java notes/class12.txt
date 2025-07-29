@@ -1,0 +1,224 @@
+Var-Arg Method 
+==============
+Untill 1.4 version it is not possible to declare a method with variable number of arguments.
+But from 1.5 version onwards it is possible to declare a method with variable number of arguments.
+
+We can declare var-arg method as follow.
+ex:
+
+			var-arg parameter 
+			   |
+	               --------
+	void methodOne(int... i)
+			   |
+			ellipse 
+
+	Here var-arg parameter is a replacement of single dimensional array.
+	ex:
+		...  ----> [] 
+
+We can invoke var-arg method with any number of integer values including zero. 
+
+In realtime we will use var-arg method when number of parameters are not fixed to a method.
+
+ex:
+---
+class Test 
+{
+	public static void main(String[] args)
+	{
+		methodOne();	
+	}
+	public static void methodOne()
+	{
+		System.out.println("Normal-Method");	
+	}
+}
+
+ex:
+---
+class Test 
+{
+	public static void main(String[] args)
+	{
+		methodOne(10);	
+	}
+	public static void methodOne(int i)
+	{
+		System.out.println("One-Parameter-Method");	
+	}
+}
+
+ex:
+---
+class Test 
+{
+	public static void main(String[] args)
+	{
+		methodOne(10,20);	
+	}
+	public static void methodOne(int i,int j)
+	{
+		System.out.println("Two-Parameter-Method");	
+	}
+}
+
+ex:
+---
+class Test 
+{
+	public static void main(String[] args)
+	{
+		methodOne();
+		methodOne(10);
+		methodOne(10,20);
+		methodOne(10,20,30);	
+	}
+	public static void methodOne(int... i)
+	{
+		System.out.println("Var-Arg-Method");	
+	}
+}
+
+case1: 
+------
+	We can mix var-arg parameter with general parameters.
+	ex:
+		void methodOne(int i,int... j)
+
+case2:
+-----	
+	If we mix var-arg parameter with general parameters then var-arg parameter
+	must be last parameter.
+	ex:
+		void methodOne(int i,int... j)
+		void methodOne(int... i,int j)  // invalid 
+
+case3:
+------
+	A var-arg method can have only one var-arg parameter.
+	ex:
+		void methodOne(int... i)
+		void methodOne(int... i,int... j) // invalid 
+
+
+Java Source File Structure 
+==========================
+case1:
+-----
+	A java program can have multiple classes.
+
+case2:
+------
+	If a java program contains multiple classes then we need to check which class 
+	contains main method and that class treated as main class.
+	ex:
+		Test.java
+		-------------
+		class A 
+		{
+			- // some logic 
+		}
+		class Test 
+		{
+			public static void main(String[] args)
+			{
+				- // some logic 
+			}
+		}
+
+case3:
+------
+	If a java program contains multiple classes with main method then we can save 
+	that program name with any name.
+	ex:
+		Test.java
+		----------
+		class A
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("A-class");	
+			}
+		}
+		class B
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("B-class");	
+			}
+		}
+		class C
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("C-class");	
+			}
+		}
+	
+		Once if we compile above program then we will get three .class files i.e 
+		A.class, B.class and C.class.
+		ex:
+			javac   Test.java
+	
+			java  A  (A class will execute)
+			java  B  (B class will execute)
+			java  C  (C class will execute)
+	
+
+case4:
+------
+	If a java program contains multiple classes with main method then we need to
+	atleast one class as public and that public class treated as main class.
+	ex:
+		A.java
+		-------
+		public class A
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("A-class");	
+			}
+		}
+		class B
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("B-class");	
+			}
+		}
+		class C
+		{
+			public static void main(String[] args)
+			{
+				System.out.println("C-class");	
+			}
+		}
+		
+		javac  A.java
+		java   A 
+		java   B
+		java   C 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			

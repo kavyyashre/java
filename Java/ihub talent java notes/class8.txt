@@ -1,0 +1,123 @@
+Datatypes 
+=========
+Datatype describes what type of value we want to store inside a variable.
+
+Datatype also tells how much memory has to be created for a variable.
+
+In java, datatypes are divided into two types.
+
+Diagram: class8.1
+
+
+byte 
+------
+It is a smallest datatype in java.
+
+Size : 1 byte (8 bits)
+
+Range: -128 to 127 (-2^7 to 2^7-1)
+
+ex:
+	1) byte b = 10;
+	   System.out.println(b); // 10
+
+	2) byte b = 130;
+	   System.out.println(b); // C.T.E 
+
+	3) byte b = 10.4;
+	   System.out.println(b); // C.T.E 
+
+short
+-----
+It is a rarely used datatype in java.
+
+Size : 2 bytes (16 bits)
+
+Range : -32768 to 32767 (-2^15 to 2^15-1)
+
+ex:
+	1) byte b = 10;
+	   short s = b;
+	   System.out.println(s); // 10
+
+	2) short s ="hi";
+	   System.out.println(s); // C.T.E 
+
+	3) short s = 10.56;
+	   System.out.println(s); // C.T.E 
+
+
+int
+-----
+It is widely used datatype in java.
+
+Size : 4 bytes (32 bits)
+
+Range : -2147483648 to 2147483647 (-2^31 to 2^31-1)
+
+ex:
+	1) int i = true;
+	   System.out.println(i); // C.T.E 
+
+	2) int i = 'a';
+	   System.out.println(i); // 97
+
+	3) int i = "hi";
+	   System.out.println(i); // C.T.E 
+
+Note:
+-----
+In java, every character contains universal unicode value.
+ex:
+	a - 97
+	A - 65 
+
+
+long 
+------
+If int datatype is not enough to hold large value then we need to use long datatype.
+
+Size : 8 bytes (64 bits)
+
+Range : (-2^63 to 2^63-1)
+
+ex:
+	1) long l = "true";
+	   System.out.println(l); // C.T.E 
+
+	2) long l = 'A';
+	   System.out.println(l); // 65
+
+	3) long l = 10.56;
+	   System.out.println(l); // C.T.E 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

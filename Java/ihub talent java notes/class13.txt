@@ -1,0 +1,173 @@
+Main Method 
+===========
+Our program contains main method or not. Either it is properly declared or not. It is not a responsibility of a compiler to check. It is a duty of a JVM to check for main method always at runtime. If JVM won't find main method then it will throw one runtime error called main method not found.
+
+JVM always look for main with following signature.
+
+signature:
+----------
+	public static void main(String[] args)
+
+If we perform any changes in above signature then JVM will throw one runtime called main method not found.
+
+
+Q) Explain main method in java?
+
+public 
+-------
+	JVM wants to call main method from anywhere.
+
+static
+------
+	JVM wants to call main method without using object reference.	
+
+void 
+-----
+	Main method does not return anything to JVM.
+
+main 
+-----
+	It is a identifier given to main method.
+
+String[] args
+----------
+	It is a command line argument
+
+We can perform following changes in main method.
+
+1) Order of modifiers is not important. Incase of public static we can declare static public.
+   ex:
+	static public  void main(String[] args)
+
+
+2) We can change String[] in following acceptable formats.
+   ex:
+	public static void main(String[] args)
+	public static void main(String  []args)
+	public static void main(String args[])	
+  
+3) We can replace args with any java valid identifier.
+   ex:
+	public static void main(String[] ihub)
+
+4) We can replace String[] with var-arg parameter.
+   ex:
+	public static void main(String... args)
+
+5) Main method will accept following modifiers.
+   ex:
+ 	synchronized, strictfp and final.
+
+Command Line Argument 
+=====================
+Arguments which are passing through command prompt such type of arguments are called command line arguments.
+
+In command line arguments we need to pass our input values at runtime command.
+
+ex:
+	javac  Test.java
+
+	java   Test  101  raja  M   1000.0
+		      |    |    |    |_______ args[3]
+		      |    |    |____________ args[2]
+		      |    |_________________ args[1]
+		      |______________________ args[0]
+
+ex:
+---
+class Test
+{
+	public static  void main(String[] args)
+	{
+		System.out.println(args[0]);
+		System.out.println(args[1]);
+		System.out.println(args[2]);
+		System.out.println(args[3]);
+	}
+}
+
+
+Q) Write a java program to accept one name and display it?
+
+class Test
+{
+	public static  void main(String[] args)
+	{
+		String name = args[0];
+		System.out.println("Welcome :"+name);
+	}
+}
+
+javac  Test.java
+java   Test  JackMa 
+
+
+
+
+Q) What is Literal?
+
+A value which is assigned to a variable is called literal.
+
+A value which is not change during the program execution is called literal.
+
+ex:
+	int   i  =  10;
+	 |    |     |_____ value of variable / Literal 
+	 |    |___________ variable name / identifier 
+	 |________________ datatype / keyword 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+Q) What is the difference between C++ and Java?
+
+C++						Java
+---------					------
+It is developed by Bjarne Stroustrup.		It is developed by James Gosling.
+
+It is a partial object oriented programming	It is a purely object oriented programming
+language.					language.
+
+It is platform dependent.			It is platform independent.
+
+Memory allocation and deallocation will taken 	Memory allocation and deallocation will taken 
+care by a programmer.				care by a JVM.
+
+It supports multiple inheritance.		It does not support multiple inheritance.
+
+It supports pointers.				It does not support pointers.
+
+It supports operator overloading.		It does not support operator overloading.
+
+It supports preprocessor directory (#).		It does not support preprocessor directory(#).
+
+It contains three access specifiers i.e		It contains four access modifiers i.e default, 
+public, private and protected.			public, private and protected.
+
+It contains three loops i.e do while loop,	It contains four loops i.e do while loop, while
+while loop and for loop.			loop, for loop and for each loop.
+
+We use .cpp extension to save the program.	We use .java extension to save the program.		
+
+
+
+
+Q) What is the difference between .Net and  Java?
+
+.Net						Java
+-------						--------
+It is a product of Microsoft.			It is a product of Oracle Corporation.
+
+It is platform dependent.			It is a platform independent.
+
+It contains less set of frameworks.		It contains large set of frameworks.
+ex:						ex:
+	asp.net 					Hibernate 
+	asp.net mvc 					spring framework
+							spring boot 
+							microservices 
+							spring AI 
+							spring security 
+
+It is suitable for medium scale projects.	It is suitable for large scale project.
+							
+Laptop Configurations 
+=====================
+1) Processor : >=i3 
+
+2) Generation : >=4th 
+
+3) Ram	     : 16gb
+
+4) Graphic Card :  (Optional)
+
+5) SSD  : 512gb 
+
+6) Brand : Dell  
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

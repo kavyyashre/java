@@ -1,0 +1,136 @@
+History of Java 
+===============
+In 1990, Sun Micro System took one project to develop a software called consumer electronic device which can be controlled by a remote like setup box. That time project was called Stealth project and later it is renamed to Green project.
+
+James Gosling, Mike Sheradin and Patrick Naughton were there to develop the project and they have met in a place called Aspan/Colarado to start the work with Graphic System. James Gosling decided to use C and C++ languages to develop the project. But the problem what they have faced in C and C++ languages are system dependent. Then James Gosling decided why don't we create our own programming language which is system independent.
+
+In 1991, they have developed a programming language called an OAK. OAK means coffee seed name, it is a national three for many countries like Germany, France, USA and etc.
+
+Later in 1995, they have renamed to OAK to Java. Java is a island of an indonasia where first coffee of seed was produced.During the development of project they were consuming lot of coffee's. Hence symbol of java is a cup of coffee with saucer.
+
+
+Interview Questions 
+====================
+
+Q) Who is the creator of java?
+
+	James Gosling 
+
+
+Q) In which year java was developed?
+
+	In 1995
+
+
+Q) Java originally known as ____ ?
+
+	OAK 
+
+
+
+
+Internal Architecture of JVM 
+=============================
+Diagram: class6.1
+
+Java application contains java code instructions. Once if we compiled java code instructions convert to byte code instructions in .class file. 
+
+JVM will invoke one module called classloader or system to load all the byte code instructions from .class file. The work of classloader is to check these byte code instructions are proper or not. If they are not proper then it will refuse the execution. If they are proper it allocates the memory.
+
+We have five types of memories in java.
+
+1) Method Area 
+-------------
+	It contains code of a class, code of a variable and code of a method.
+
+2) Heap 
+-------
+	Our object creations will store in heap area.
+
+3) Java Stack 
+-----------
+	Java methods stored in method area but to execute those methods we required 
+	some memory and that memory allocated in java stack.
+
+4) PC Register
+-----------
+	It is a program counter register which is used to track the address of an instructions.
+
+5) Native Method Stack 
+---------------------
+	Java methods execute in method area.
+	Similarly native methods execute in native method stack. 
+	But to execute native methods we required a program called Native method interface.
+
+Execution Engine 
+-----------------
+Execution engine contains interpreter and JIT compiler.
+
+Whenever JVM loads byte code instructions from .class file. It simultenously uses interpreter and JIT compiler.
+
+Interpreter is used to execute our program line by line procedure.
+
+JIT compiler is used to increase the execution speed of our program.
+
+Finally, JVM converts byte code to machine code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

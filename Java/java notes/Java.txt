@@ -1,0 +1,256 @@
+									Java
+									====
+what is java ?
+java is a high-level, object-oriented, platform-independent programming language developed by Sun Microsystems in 1995. It is designed to be simple, secure, and portable, allowing developers to write code once and run it anywhere.
+
+									Java Packages
+									=============
+
+what is package ? 
+A package in Java is like a folder that groups related classes and interfaces together.
+It helps to keep the code clean, easy to manage, and avoids name conflicts.
+
+Types of Packages in Java:
+-------------------------
+
+  Type	 				Description
+Built-in		Provided by Java API (like java.util, java.io)
+User-defined		Created by programmers for organizing custom code
+
+Built-in Java Packages
+-----------------------
+  Package					Description
+java.lang		Core classes like String, Math, Object (auto-imported)
+java.util		Utility classes like ArrayList, HashMap, Collections
+java.io			Input/output like File, BufferedReader
+java.net		Networking like Socket, URL
+java.sql		Database handling like Connection, ResultSet
+javax.swing		GUI components like JButton, JFrame
+
+User-defined Package Example
+----------------------------
+1. Create a package
+-------------------
+package mypackage;
+
+public class MyClass {
+    public void display() {
+        System.out.println("Hello from MyClass in mypackage");
+    }
+}
+2. Use the package in another class
+-----------------------------------
+import mypackage.MyClass;
+
+public class Main {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+        obj.display();
+    }
+}
+
+Package Naming Conventions:
+--------------------------
+package name always starts with small letters.
+spaces are not allowed .
+if we combine 2 words  first word first letter should be small letter and second word first letter should be capital.
+dot should not be used in starting or ending.
+
+
+									classes in java 
+									================
+
+what is class ? 
+class is a blueprint for creating objects. It defines fields (variables) and methods (functions) that describe the behavior and state of an object.
+members of class - variables and methods 
+
+Q. what is superclass of any class in java ?
+A. object 
+
+Basic Syntax of a Java Class
+----------------------------
+class ClassName {
+    // fields or variables
+    int a;
+
+    // methods
+    void show() {
+        System.out.println("This is a method");
+    }
+}
+Example: Simple Java Class
+--------------------------
+class Student {
+    // Fields
+    int id;
+    String name;
+
+    // Method
+    void display() {
+        System.out.println("ID: " + id + ", Name: " + name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student(); // creating object
+        s1.id = 101;
+        s1.name = "Pooja";
+        s1.display(); // calling method
+    }
+}
+Types of Classes in Java:
+-------------------------
+    Type					Description
+Normal class			Standard class with fields and methods
+Abstract class			Cannot be instantiated; contains abstract methods
+Final class			Cannot be inherited
+Static nested class		Class inside another class, declared static
+Inner class			Non-static class declared inside another class (nested class)
+Anonymous class			Class without a name (usually used for one-time use, inside methods)
+
+Access Modifiers with Classes:
+-----------------------------
+ Modifier			Description
+public			Accessible from anywhere
+default			Accessible only within the same package
+private			(Not allowed with top-level classes)
+protected		(Used with members, not top-level class)
+
+Class vs Object:
+----------------
+      Class					Object
+Blueprint or template			Real instance of a class
+Defined using class keyword		Created using new keyword
+No memory allocated			Memory allocated in heap
+class Car {}				Car myCar = new Car();
+
+syntax for Creating an Object:
+-----------------------------
+ClassName obj = new ClassName();
+
+Example
+-------
+Student s1 = new Student();
+
+										Datatpes
+										========
+what is datatype ? 
+A data type in Java defines the type of data a variable can store, such as integers, decimals, characters, or boolean values.
+It tells the compiler how much memory to allocate and what kind of operations can be performed on the data.
+
+computer memory units:
+------------------------
+bit             = binary unit 
+1 nibble 	= 4 bits
+1 byte		= 8 bits
+1 kilo byte(kb) = 1024bytes
+1 mega byte(mb) = 1024 kilobyte
+1 giga byte(gb) = 1024 mega byte
+1 tera byte(tb) = 1024 giga byte
+1 petabyte(pb) = 1024 tera bytes
+
+
+
+types of data types :
+--------------------
+Java Data Types Are Divided Into Two Categories:
+
+          1.primitive data types
+	  2.non-primitive data types 
+
+1. Primitive Data Types (8 Types):
+---------------------------------
+These are the most basic data types provided by Java.
+
+Data Type		 Size			  Example				Description
+ byte			1 byte			byte a = 10;			Small integers (-128 to 127)
+ short			2 bytes			short s = 1000;			Medium-sized integers
+ int			4 bytes			int num = 50000;		Default integer type
+ long			8 bytes			long l = 100000L;		Large numbers (add L)
+ float			4 bytes			float f = 10.5f;		Decimal with f
+ double			8 bytes			double d = 99.99;		Large decimal (default)
+ char			2 bytes			char c = 'A';			Single character
+boolean			1 bit			boolean b = true;		Only true or false
+
+to find data types size and range :
+-----------------------------------
+	System.out.println(Integer.SIZE/8);       //to find the size 
+	System.out.println(Integer.MIN_VALUE);	  //to find the minimum size
+	System.out.println(Integer.MAX_VALUE);	  //to find the maximum size
+
+2. Non-Primitive Data Types
+---------------------------
+These are reference types created by users or built-in classes.
+
+ Type			      Example				      Description
+String			String name = "Pooja";			Sequence of characters
+Array			int[] arr = {1,2,3};			Collection of same data types
+Class			Student s = new Student();		Blueprint for creating objects
+Interface		interface A {}				Used for abstraction
+
+Default values of data types :
+------------------------------
+Primitive Data Types:
+---------------------
+Data Type	Default Value
+ byte			0
+ short			0
+ int			0
+ long			0L
+ float			0.0f
+ double			0.0d
+ char			'\u0000' (null character)
+ boolean		false
+
+Non-Primitive Data Types:
+-------------------------
+Data Type	Default Value
+ String		     null
+ Array		     null
+ Object		     null
+ Collection	     null
+ Class Type	     null
+										variables
+										=========
+what is a variable ?
+A variable in Java is a name given to a memory location that stores a value which can be changed during program execution.
+
+syntax of Variable Declaration:
+------------------------------
+dataType variableName = value;
+
+Example:
+--------
+int age = 25;
+String name = "Pooja";
+
+variable define and initialization :
+------------------------------------
+int pincode ;		// variable define
+pincode =522212;	//variable initialization	//o/p:- 522212
+pincode =580085;	//variable reassign		//o/p:- 580085
+override also possible in variable 
+
+Different types of java :
+-------------------------
+1.instance variable( non-static variable) 	//global variable 
+2.class variables (static variable)		//global variable
+3.local variables 
+
+global variables are accessed  in any method 
+
+instance variable :
+-------------------
+An instance variable is a non-static variable that is declared inside a class but outside any method, constructor, or block.
+it is Accessed only using an object.
+
+class variable :
+---------------
+A class variable is a variable that is declared with the static keyword inside a class (but outside any method or constructor).
+it is called a static variable because it belongs to the class itself, not to any object.
+
+local variable :
+----------------
+A local variable in Java is a variable that is declared inside a method, constructor, or block and can be used only within that scope.Only accessible within that method or block.Not accessible from outside. Must be initialized before use. No default value is assigned by JVM.
+
+
+

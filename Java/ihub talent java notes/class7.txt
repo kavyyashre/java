@@ -1,0 +1,366 @@
+Identifiers
+===========
+A name in java is called identifier.
+
+It can be variable name, method name, class name or label name.
+
+ex:
+
+class  Test
+{
+	public static void main(String[] args)
+	{
+		int x = 10;
+
+		System.out.println(x);
+	}
+}
+
+Here Test, main, args and x are identifiers.
+
+
+Rules to declare an identifiers
+-------------------------------
+
+Rule1:
+-----
+	Identifiers will accept following characters.
+	ex:
+		A-Z
+		a-z
+		0-9
+		_
+		$
+
+Rule2:
+------
+	If we take other characters then we will get compile time error.
+	ex:
+		int  emp_id;  //valid 
+		int  emp$alary; //valid 
+		int  dept#no;  //invalid 
+
+Rule3:
+-----
+	Every identifier is a case sensitive.
+	ex:
+		int  number;
+		int  numBER; 
+
+Rule4:
+------
+	We can't take reserved words as an identifier.
+	ex:
+		int  if; // invalid 
+		int  else; // invalid 
+		int  for; // invalid 
+
+Rule5:
+------
+	Identifier must and should starts with alphabet,underscore or dollar symbol 
+	but not with digit.
+	ex:
+		int  empId1 //valid 
+		int  _abcd  //valid 
+		int  $=20;  //valid 
+		int  1abcd; //invalid 
+
+Rule6:
+------
+	There is no length limit for an identifiers but it is not recommanded to 
+	take more then 15 characters.
+
+
+Reserved Words 
+==============
+There are some identifiers which are reserved to associate some functionality or meaning such type of identifiers are called reserved words.
+
+Java supports 53 reserved words.
+
+All reserved words we need to declare under lower case letters only. 
+
+In java, Reserved words are divided into two types.
+
+Diagram: class7.1
+
+Used keywords with respect to class
+-----------------------------------
+package
+interface
+class
+enum
+import
+extends 
+implements 
+
+Used keywords with respect to object
+------------------------------
+new
+instanceof
+this
+super 
+
+Used keywords with respect to datatypes
+--------------------------------
+byte
+short
+int
+long
+float
+double
+boolean
+char 
+
+Used keywords with respect to return type 
+--------------------------
+void 
+
+Used keywords with respect to modifiers
+--------------------------------------
+default
+public
+private
+protected
+final
+abstract
+static
+sychronized
+strictfp
+transient
+volatile
+native 
+
+Used keywords with respect flow control
+-------------------------------------
+if
+else
+do
+while
+break
+continue
+for
+switch
+case 
+default
+
+Used keywords with respect to exception handling
+---------------------
+try
+catch
+finally
+throw
+throws
+assert 
+
+Interview Questions 
+===================
+
+Q) What is package?
+
+	A package is a collection of classes and interfaces?
+
+
+Q) Which package consider as default package in java?
+
+	java.lang package
+
+
+Q) How many memories are there in java?
+
+ 	We have five memories in java.
+	1) Method Area 
+	2) Heap 
+	3) Java Stack 
+	4) PC Register 
+	5) Native Method Stack 
+
+
+Q) What is Native Method in Java?
+
+	A method which is developed by using some other language is called native method.
+
+
+Q) What is JIT compiler?
+
+	It is a part of a JVM that is used to increase the execution speed of our program.
+
+
+Q) How many classloaders are there in java?
+
+	We have three predefined classloaders in java.
+
+	1) Bootstrap classloader 
+	2) Extension classloader 
+	3) Application/System classloader 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,235 @@
+float						double 
+---------					-------
+If we need 4 to 6 decimal point of accuracy 	If we need 14 to 16 decimal point of 	
+then we need to use float.			accuracy then we need to use double.
+
+Size : 4 bytes (32 bits)			Size : 8 bytes (64 bits)
+
+Range: -3.4e38 to 3.4e38			Range: -1.7e308 to 1.7e308
+
+To declare a float value we need to suffix 	To declare a double value we need to 
+with 'f' or 'F'.				suffix with 'd' or 'D'.
+ex:						ex:
+	10.56f						10.56d
+
+ex:
+----
+	1) float f = 10.56f;
+	   System.out.println(f); // 10.56
+
+	2) float f = 10;
+	   System.out.println(f); // 10.0
+	
+	3) float f = 'a';
+	   System.out.println(f); // 97.0
+
+	4) float f = true;
+           System.out.println(f); // C.T.E 
+
+ex:
+	1) double d = 10.56d;
+	   System.out.println(d); // 10.56
+
+	2) double d = 10;
+	   System.out.println(d); // 10.0
+	
+	3) double d = 'a';
+	   System.out.println(d); // 97.0
+
+	4) double d = true;
+           System.out.println(d); // C.T.E 
+
+	5) double d = "hi";
+	   System.out.println(d); // C.T.E 
+
+
+boolean 
+-------
+It is used to represent boolean values either true or false.
+
+Size : (Not Applicable) (1-bit)
+Range : (Not Applicable)
+
+ex:
+	1) boolean b = "true";
+	   System.out.println(b); // C.T.E 
+
+	2) boolean b = TRUE;
+	   System.out.println(b); // C.T.E 
+
+	3) boolean b = true;
+	   System.out.println(b); // true 
+
+
+char 
+-----
+It is a single character which is enclosed in a single quotation.
+
+Size :	2 bytes (16 bits)
+
+Range : 0 to 65535 
+
+ex:
+	1) char ch = 'a';
+	   System.out.println(ch); // a 
+
+	2) char ch = 65;
+	   System.out.println(ch); // A 
+
+	3) char ch = 'ab';
+	   System.out.println(ch); // C.T.E 
+
+Diagram: class9.1
+
+Programs 
+=========
+
+Q) Write a java program to display size of short datatype?
+
+class Test 
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Short.BYTES);//2 (bytes)
+		System.out.println(Short.SIZE);// 16 (bits)
+	}
+}
+
+Q) Write a java program to display size of int datatype?
+
+class Test 
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Integer.BYTES);//4 (bytes)
+		System.out.println(Integer.SIZE);// 32 (bits)
+	}
+}
+
+
+Q) Write a java program to display size of long datatype?
+
+class Test 
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Long.BYTES);//8 (bytes)
+		System.out.println(Long.SIZE);// 64 (bits)
+	}
+}
+
+
+Q) Write a java program to display range of byte datatype?
+
+class Test 
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Byte.MIN_VALUE);
+		System.out.println(Byte.MAX_VALUE);
+	}
+}
+
+Q) Write a java program to display range of short datatype?
+
+class Test 
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Short.MIN_VALUE);
+		System.out.println(Short.MAX_VALUE);
+	}
+}
+
+
+Q) Write a java program to display range of int datatype?
+
+class Test 
+{
+	public static void main(String[] args)
+	{
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.MAX_VALUE);
+	}
+}
+
+Q) Write a java program to display range of char datatype?
+
+
+class Test 
+{
+	public static void main(String[] args)
+	{
+		System.out.println((int)Character.MIN_VALUE);
+		System.out.println((int)Character.MAX_VALUE);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
